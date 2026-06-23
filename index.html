@@ -60,7 +60,17 @@ section{position:relative;z-index:1}
 /* ── HERO ── */
 #hero{min-height:100vh;display:flex;align-items:center;padding:6rem 0 4rem}
 .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,240,255,.08);border:1px solid rgba(0,240,255,.2);color:var(--cyan);font-size:.75rem;font-weight:600;padding:.35rem .85rem;border-radius:50px;letter-spacing:.08em;margin-bottom:1.25rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,240,255,.08);
+            border:1px solid rgba(0,240,255,.2);color:var(--cyan);font-size:.75rem;font-weight:600;
+            padding:.35rem .85rem;border-radius:50px;letter-spacing:.08em;margin-bottom:1.25rem}
+  body.light .hero-badge{
+    background: #0d1124;
+    border:1px solid #0d1124;
+    color:#ffffff;
+  }
+  body.light .hero-badge{
+    background: #00c853
+  }
 .hero-badge .dot{width:7px;height:7px;background:var(--lime);border-radius:50%;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
 .hero-title{font-family:'Syne',sans-serif;font-size:clamp(2.4rem,5.5vw,4.5rem);font-weight:800;line-height:1.05;letter-spacing:-.02em;margin-bottom:.5rem}
