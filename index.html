@@ -281,17 +281,41 @@ footer{padding:3rem 0 2rem;border-top:1px solid var(--border);text-align:center}
 
 /* LIGHT MODE */
 body.light{
+  --bg:#f5f6ff;
+  --bg2:#eef0ff;
+  --surface:rgba(0,0,0,0.03);
+   --surface2:rgba(0,0,0,0.05);
+  --border:rgba(0,0,0,0.08);
+  --white:#0d1124;
+  --muted:#4a5577;
+  background : #f5f6ff !important;
   color: #0d1124;
 }
+body.light #skills,
+  body.light #salesforce {
+    background : transparent;
+  }
+  body.light .stat-card,
+  body.light .project-card,
+  body.light .skill-category,
+  body.light .cert-card,
+  body.light .contact-item,
+  body.light .contact-form{
+    background: white;
+    border-color: rgba(0,0,0,0.08);
+  }
+  
 body.light h1,
 body.light h2,
 body.light h3,
-body.light h4
+body.light h4,
 body.light h5,
 body.light h6{
   color:#0d1124;
 }
-body.light p{
+body.light p,
+  body.light .project-desc,
+  body.light .timeline-list li{
   color: #4a5577;
 }
 body.light a{
@@ -315,7 +339,7 @@ body.light .stat-label {
 }
 
 body.light #bg-canvas{opacity:.15}
-body.light nav.scrolled{background:rgba(245,246,255,.9)}
+body.light nav.scrolled{background:#ffffff}
 </style>
 </head>
 <body>
